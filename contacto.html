@@ -15,7 +15,8 @@
       <img src="images/logos.png" alt="Dr. Omar Reyes" class="logo-img">
     </div>
     <nav>
-      <ul>
+      <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono de hamburguesa -->
+      <ul class="menu" id="menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Procedimientos</a></li>
         <li><a href="blog.html">Testimonios</a></li>
@@ -72,5 +73,10 @@
 </section>
 
 </footer>
+<script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('active');
+    });
+</script>
 </body>
 </html>
