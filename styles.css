@@ -308,64 +308,109 @@ header nav ul li a:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Sección Servicios */
+/* Estilos generales de la sección Servicios */
 #services {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-  text-align: center;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 #services h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50;
 }
 
 .services-category {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .services-category h3 {
-  font-size: 28px;
-  color: #3498db;
-  margin-bottom: 30px;
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 30px;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
 }
 
 .service-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .service-image img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .service-text h4 {
-  font-size: 20px;
-  color: #2c3e50;
-  margin-bottom: 10px;
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 .service-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en móviles */
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .service-card {
+        width: 100%; /* Ocupa el 100% del ancho */
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .service-image img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    .service-text {
+        padding: 0 20px; /* Añade un poco de padding a los lados */
+        text-align: center; /* Centra el texto */
+    }
+
+    .service-text h4 {
+        font-size: 24px; /* Tamaño del título */
+        margin-bottom: 15px; /* Espacio después del título */
+    }
+
+    .service-text p {
+        font-size: 16px; /* Tamaño del texto */
+        line-height: 1.6; /* Mejora la legibilidad */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (smartphones) */
+@media (max-width: 480px) {
+    .service-text h4 {
+        font-size: 20px; /* Tamaño más pequeño para el título */
+    }
+
+    .service-text p {
+        font-size: 14px; /* Tamaño más pequeño para el texto */
+    }
 }
 
 /* Sección Testimonios */
