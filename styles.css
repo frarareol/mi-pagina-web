@@ -550,3 +550,110 @@ footer .footer-bottom p {
   font-size: 14px;
   color: #aaa;
 }
+
+
+/* Estilos para el ícono de hamburguesa */
+.menu-icon {
+    display: none; /* Oculta el ícono en pantallas grandes */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para el menú en móviles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Muestra el ícono en móviles */
+    }
+    .menu {
+        display: none; /* Oculta el menú en móviles */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+    .cta-button {
+        display: none; /* Oculta el botón en móviles */
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    /* Encabezado */
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav {
+        width: 100%;
+    }
+
+    /* Sección Hero */
+    #hero .hero-content,
+    #hero-2 .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero .hero-image img,
+    #hero-2 .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Sección Servicios */
+    .service-item,
+    .service-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-image {
+        order: -1; /* Mueve la imagen arriba del texto */
+    }
+
+    /* Sección Quién Soy */
+    #about .about-text {
+        padding: 20px;
+    }
+
+    /* Pie de página */
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de las imágenes */
+    .hero-image img,
+    .service-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajusta el tamaño del texto */
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .footer-logo img {
+        width: 200px; /* Reduce el tamaño del logo */
+    }
+    footer .footer-whatsapp a {
+        flex-direction: column;
+        align-items: center;
+    }
+}
