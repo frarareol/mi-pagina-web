@@ -703,45 +703,52 @@ footer .footer-bottom p {
     margin-bottom: 30px;
 }
 
-/* Ajustes para móviles */
+/* Ajustes para la sección Hero 2 en móviles */
 @media (max-width: 768px) {
     #hero-2 .hero-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        text-align: center; /* Centra el texto */
+    }
+
+    #hero-2 .hero-image {
+        width: 100%; /* La imagen ocupa el 100% del ancho */
+        max-width: 500px; /* Limita el tamaño máximo de la imagen */
+        margin: 0 auto 20px; /* Centra la imagen y añade espacio debajo */
     }
 
     #hero-2 .hero-image img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        width: 100%; /* La imagen ocupa el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados */
     }
 
     #hero-2 .hero-text {
-        padding: 0 20px;
+        width: 100%; /* El texto ocupa el 100% del ancho */
+        padding: 0 20px; /* Añade un poco de padding a los lados */
     }
 
     #hero-2 h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
+        font-size: 28px; /* Tamaño del título */
+        margin-bottom: 15px; /* Espacio después del título */
     }
 
     #hero-2 p {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 16px; /* Tamaño del texto */
+        line-height: 1.6; /* Mejora la legibilidad */
     }
 }
 
 /* Ajustes para pantallas muy pequeñas (smartphones) */
 @media (max-width: 480px) {
-    #hero-2 .hero-image img {
-        max-width: 80%;
+    #hero-2 .hero-image {
+        max-width: 100%; /* La imagen ocupa todo el ancho en móviles pequeños */
     }
 
     #hero-2 h2 {
-        font-size: 24px;
+        font-size: 24px; /* Tamaño más pequeño para el título */
     }
 
     #hero-2 p {
-        font-size: 14px;
+        font-size: 14px; /* Tamaño más pequeño para el texto */
     }
 }
