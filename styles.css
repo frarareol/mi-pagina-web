@@ -657,3 +657,91 @@ footer .footer-bottom p {
         align-items: center;
     }
 }
+/* Estilos generales de la sección Hero 2 */
+#hero-2 {
+    background-color: #fdfcfa;
+    color: #2c3e50;
+    padding: 100px 0;
+}
+
+#hero-2 .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#hero-2 .hero-content.reverse {
+    flex-direction: row-reverse;
+}
+
+#hero-2 .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#hero-2 .hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#hero-2 .hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+#hero-2 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero-2 p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    #hero-2 .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-2 .hero-image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #hero-2 .hero-text {
+        padding: 0 20px;
+    }
+
+    #hero-2 h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    #hero-2 p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (smartphones) */
+@media (max-width: 480px) {
+    #hero-2 .hero-image img {
+        max-width: 80%;
+    }
+
+    #hero-2 h2 {
+        font-size: 24px;
+    }
+
+    #hero-2 p {
+        font-size: 14px;
+    }
+}
